@@ -19,7 +19,7 @@ public class CameraController : MonoBehaviour
     {
         mainCamera.transform.position += transform.forward * Input.GetAxis("Mouse X") * speed * Time.deltaTime;
         mainCamera.transform.position += transform.right * Input.GetAxis("Mouse Y") * speed * Time.deltaTime;     
-        //transform.eulerAngles += new Vector3(-mouseY * sensitivity, mouseX * sensitivity, 0);
+        //mainCamera.transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y") * sensitivity, Input.GetAxis("Mouse X") * sensitivity, 0);
     }
 
 }

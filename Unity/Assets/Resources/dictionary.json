@@ -1,12 +1,24 @@
 {
 	"dictionary": [
 		{
-			"term": "Stopinje celzija",
-			"definition": "Celzijeva temperaturna lestvica"
+			"term": "TERM 1",
+			"definition": "DEFINITION 1\npopoldan"
 		},
 		{
-			"term": "TERM 1",
-			"definition": "DEFINITION 1"
+			"term": "TERM 2",
+			"definition": "DEFINITION 2\ndeževno"
+		},
+		{
+			"term": "TERM 3",
+			"definition": "DEFINITION 3\noblačno"
+		},
+		{
+			"term": "TERM 4",
+			"definition": "DEFINITION 4\nvzhod"
+		},
+		{
+			"term": "TERM 5",
+			"definition": "DEFINITION 5\nzahod"
 		}
 	]
 }

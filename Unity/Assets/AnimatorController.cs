@@ -10,12 +10,18 @@ public class AnimatorController : MonoBehaviour
     bool playing = true;
     float speed = 1.0f;
 
+
+    float elapsed_time_normalized = 0.0f;
+
     Button b_Play;
     Button b_Stop;
     Button b_Reset;
-    Slider m_Slider;
+
+    Slider slider_animation_speed;
+    Slider slider_animation_elapsed;
 
     Animator m_Animator;
+    AnimatorStateInfo animator_state_info;
 
     void Start()
     {
@@ -31,12 +37,15 @@ public class AnimatorController : MonoBehaviour
         b_Reset = GameObject.Find("Button_Reset").GetComponent<Button>();
         b_Reset.onClick.AddListener(AnimatorReset);
 
-        m_Slider = GameObject.Find("AnimationSpeedSlider").GetComponent<Slider>();
-        m_Slider.onValueChanged.AddListener(delegate {AnimatorSpeed(); });
+        slider_animation_speed = GameObject.Find("Slider_AnimationSpeed").GetComponent<Slider>();
+        slider_animation_speed.onValueChanged.AddListener(delegate {AnimatorSpeed(); });
+
+        slider_animation_elapsed = GameObject.Find("Slider_AnimationElapsed").GetComponent<Slider>();
 
         // ANIMATOR
 
         m_Animator = GameObject.Find("SampleCharacter").transform.GetChild(0).gameObject.GetComponent<Animator>();
+        animator_state_info = m_Animator.GetCurrentAnimatorStateInfo(0);
 
     }
 
@@ -45,11 +54,14 @@ public class AnimatorController : MonoBehaviour
         if (playing) {
             m_Animator.speed = speed;   
         }
+        animator_state_info = m_Animator.GetCurrentAnimatorStateInfo(0);
+        if (animator_state_info.normalizedTime > 0.0f && animator_state_info.normalizedTime < 1.0f) {
+            slider_animation_elapsed.value = animator_state_info.normalizedTime;
+        }
     }
 
     void AnimatorReset() {
-
-        Debug.Log("HEHEHE");
+        Debug.Log("AnimatorReset");
     }
 
     void AnimatorStop() {
@@ -63,7 +75,10 @@ public class AnimatorController : MonoBehaviour
     }
 
     void AnimatorSpeed() {
-        speed = m_Slider.value * 10.0f;
+        speed = slider_animation_speed.value * 10.0f;
+    }
+
+    void Slider_AnimationElapsed_Event() {
     }
 
 }
