@@ -7,78 +7,55 @@ using UnityEngine.UI;
 public class AnimatorController : MonoBehaviour
 {
 
-    bool playing = true;
-    float speed = 1.0f;
-
-
-    float elapsed_time_normalized = 0.0f;
-
-    Button b_Play;
-    Button b_Stop;
-    Button b_Reset;
+    Button button_play;
+    Button button_stop;
+    Button button_pause;
 
     Slider slider_animation_speed;
     Slider slider_animation_elapsed;
 
-    Animator m_Animator;
+    Animator animator;
     AnimatorStateInfo animator_state_info;
 
     void Start()
     {
-
-        // ANIMATOR CONTROLS
-
-        b_Play = GameObject.Find("Button_Play").GetComponent<Button>();
-        b_Play.onClick.AddListener(AnimatorPlay);
-        
-        b_Stop = GameObject.Find("Button_Stop").GetComponent<Button>();
-        b_Stop.onClick.AddListener(AnimatorStop);
-
-        b_Reset = GameObject.Find("Button_Reset").GetComponent<Button>();
-        b_Reset.onClick.AddListener(AnimatorReset);
+        button_play = GameObject.Find("Button_Play").GetComponent<Button>();
+        button_play.onClick.AddListener(PlayHandler);  
+        button_stop = GameObject.Find("Button_Stop").GetComponent<Button>();
+        button_stop.onClick.AddListener(StopHandler);
+        button_pause = GameObject.Find("Button_Pause").GetComponent<Button>();
+        button_pause.onClick.AddListener(PauseHandler);
 
         slider_animation_speed = GameObject.Find("Slider_AnimationSpeed").GetComponent<Slider>();
         slider_animation_speed.onValueChanged.AddListener(delegate {AnimatorSpeed(); });
 
         slider_animation_elapsed = GameObject.Find("Slider_AnimationElapsed").GetComponent<Slider>();
 
-        // ANIMATOR
-
-        m_Animator = GameObject.Find("SampleCharacter").transform.GetChild(0).gameObject.GetComponent<Animator>();
-        animator_state_info = m_Animator.GetCurrentAnimatorStateInfo(0);
-
+        animator = GameObject.Find("SampleCharacter").transform.GetChild(0).gameObject.GetComponent<Animator>();
     }
 
     void Update()
     {
-        if (playing) {
-            m_Animator.speed = speed;   
-        }
-        animator_state_info = m_Animator.GetCurrentAnimatorStateInfo(0);
+        animator_state_info = animator.GetCurrentAnimatorStateInfo(0);
         if (animator_state_info.normalizedTime > 0.0f && animator_state_info.normalizedTime < 1.0f) {
             slider_animation_elapsed.value = animator_state_info.normalizedTime;
         }
     }
 
-    void AnimatorReset() {
-        Debug.Log("AnimatorReset");
+    void StopHandler() {
+        animator.Play(animator_state_info.fullPathHash, 0, 0.0f);
+        animator.speed = 0.0f;
     }
 
-    void AnimatorStop() {
-        playing = false;
-        m_Animator.speed = 0.0f;
+    void PauseHandler() {
+        animator.speed = 0.0f;
     }
 
-    void AnimatorPlay() {
-        playing = true;
-        m_Animator.speed = speed;
+    void PlayHandler() {
+        animator.speed = 1.0f;
     }
 
     void AnimatorSpeed() {
-        speed = slider_animation_speed.value * 10.0f;
-    }
-
-    void Slider_AnimationElapsed_Event() {
     }
 
 }
