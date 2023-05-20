@@ -13,7 +13,7 @@ public class Slider_AnimationElapsed_Handler : MonoBehaviour
     
 
     private void EventHandler(BaseEventData eventData) {
-        animator.Play(animator_state_info.nameHash, 0, slider_animation_elapsed.value);
+        animator.Play(animator_state_info.fullPathHash, 0, slider_animation_elapsed.value);
         animator.speed = 0.0f;
     }
 

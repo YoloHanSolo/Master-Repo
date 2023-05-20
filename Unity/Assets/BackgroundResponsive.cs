@@ -7,7 +7,7 @@ public class BackgroundResponsive : MonoBehaviour
 {
     RectTransform transform_canvas;
     RectTransform transform_element;
-
+    
     void Start()
     {
         transform_canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
