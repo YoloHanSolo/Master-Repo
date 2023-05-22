@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-public class CameraController : MonoBehaviour
+public class ControllerCamera : MonoBehaviour
 {
     Camera mainCamera;
     RectTransform lynn;
     RectTransform transform_canvas;
 
-    public float speed = 5.0f;
-    public float sensitivity = 5.0f;
+    public float sensitivity = 0.1f;
 
     Vector3 center;
 

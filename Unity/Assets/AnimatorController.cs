@@ -34,6 +34,7 @@ public class AnimatorController : MonoBehaviour
         slider_animation_elapsed = GameObject.Find("Slider_AnimationElapsed").GetComponent<Slider>();
 
         animator = GameObject.Find("SampleCharacter").transform.GetChild(0).gameObject.GetComponent<Animator>();
+        playing = true;
     }
 
     void Update()
@@ -62,7 +63,9 @@ public class AnimatorController : MonoBehaviour
     }
 
     void AnimatorSpeed() {
-        animator.speed = slider_animation_speed.value;
+        if (playing) {
+            animator.speed = slider_animation_speed.value;
+        }
     }
 
 }
