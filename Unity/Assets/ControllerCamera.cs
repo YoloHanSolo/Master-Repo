@@ -1,35 +1,84 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class ControllerCamera : MonoBehaviour
 {
-    Camera mainCamera;
-    RectTransform lynn;
-    RectTransform transform_canvas;
+    Camera camera_default;
+    Camera camera_hands;
+    Camera camera_face;
 
-    public float sensitivity = 0.1f;
+    int button_select_index = 0;
+    Button[] perspectives;
 
-    Vector3 center;
+    Button button_perspective_default;
+    Button button_perspective_hands;
+    Button button_perspective_face;
 
     void Start()
     {
-        transform_canvas = GameObject.Find("Canvas").GetComponent<RectTransform>();
-        mainCamera = GameObject.Find("Main Camera").GetComponent<Camera>();
-        lynn = GameObject.Find("Lynn").GetComponent<RectTransform>();
+        button_perspective_default = GameObject.Find("Button_PerspectiveDefault").GetComponent<Button>();
+        button_perspective_default.onClick.AddListener(HandlerDefault);  
+        button_perspective_default.Select();
+
+        button_perspective_hands = GameObject.Find("Button_PerspectiveHands").GetComponent<Button>();
+        button_perspective_hands.onClick.AddListener(HandlerHands);
+
+        button_perspective_face = GameObject.Find("Button_PerspectiveFace").GetComponent<Button>();
+        button_perspective_face.onClick.AddListener(HandlerFace);
+
+        perspectives = new Button[] {
+            button_perspective_default,
+            button_perspective_hands,
+            button_perspective_face
+        };
+
+        camera_default = GameObject.Find("CameraDefault").GetComponent<Camera>();
+        camera_hands = GameObject.Find("CameraHands").GetComponent<Camera>();
+        camera_face = GameObject.Find("CameraFace").GetComponent<Camera>();
+
+        camera_default.gameObject.SetActive(true);
+        camera_hands.gameObject.SetActive(false);
+        camera_face.gameObject.SetActive(false);
     }
 
-    void Update()
-    {
-        Vector3 mouse = Input.mousePosition;
-        if (Input.GetMouseButton(0) &&
-            mouse.x < transform_canvas.sizeDelta.x / 2 && 
-            mouse.y > transform_canvas.sizeDelta.y / 2 && 
-            mouse.y < transform_canvas.sizeDelta.y) {
-            mainCamera.transform.eulerAngles += new Vector3(-Input.GetAxis("Mouse Y") * sensitivity, Input.GetAxis("Mouse X") * sensitivity, 0);
-        }
+    void Update() {
 
+    }
+
+    void HandlerDefault() {
+        if (button_select_index != 0) {
+            button_select_index = 0;
+            perspectives[button_select_index].Select();
+            
+            camera_default.gameObject.SetActive(true);
+            camera_hands.gameObject.SetActive(false);
+            camera_face.gameObject.SetActive(false);
+        }
+    }
+
+    void HandlerHands() {
+        if (button_select_index != 1) {
+            button_select_index = 1;
+            perspectives[button_select_index].Select();
+
+            camera_default.gameObject.SetActive(false);
+            camera_hands.gameObject.SetActive(true);
+            camera_face.gameObject.SetActive(false);
+        }
+    }
+
+    void HandlerFace() {
+        if (button_select_index != 2) {
+            button_select_index = 2;
+            perspectives[button_select_index].Select();
+
+            camera_default.gameObject.SetActive(false);
+            camera_hands.gameObject.SetActive(false);
+            camera_face.gameObject.SetActive(true);
+        }
     }
 
 }
