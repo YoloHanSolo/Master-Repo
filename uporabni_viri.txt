@@ -1,0 +1,44 @@
+#1
+ŽANA JUVAN (Diplomsko delo) 2018
+Izdelava 3D modela animiranega tolmača znakovnega jezika
+https://repozitorij.uni-lj.si/Dokument.php?id=113358&lang=slv
+
+#2
+ŽANA JUVAN (Magistrsko delo) 2021
+Animirani kretalec slovenskega znakovnega jezika za omejeno besedišče
+https://repozitorij.uni-lj.si/Dokument.php?id=148951&lang=slv
+
+#3 
+SLOVAR SLOVENSKEGA ZNAKOVNEGA JEZIKA
+https://www.szj.si/
+
+#4 
+Zveza društev gluhih in naglušnih Slovenije
+https://zveza-gns.si/
+
+#5
+Zakon o uporabi slovenskega znakovnega jezika (ZUSZJ) 2002 
+http://www.pisrs.si/Pis.web/pregledPredpisa?id=ZAKO1713
+
+#6
+Franc Solina, Luka Cempre, Aleksander Bešir 2013
+Dictionary of the Slovenian Sign Language on the WWW
+https://www.researchgate.net/publication/251570702_Dictionary_of_the_Slovenian_Sign_Language_on_the_WWW
+
+#7
+SSKJ - Slovar slovenskega knjižnega jezika
+https://fran.si/iskanje?FilteredDictionaryIds=133&View=1&Query=%2A
+
+
+##############################################################################################################
+
+
+MAYBE
+
+-- Jakliˇc, A., Vodopivec, D., Komac, V.: Learning sign language through multime-dia. In: Proceedings of International Conference on Multimedia Computing andSystems, Washington, pp. 282–285 (1995)
+
+-- 3D Animation framework for sign language 
+https://www.researchgate.net/publication/281434972_3D_Animation_framework_for_sign_language
+
+-- Automatic generation of a 3D sign language avatar on AR glasses given 2D videos of human signers
+https://www.researchgate.net/publication/355576067_Automatic_generation_of_a_3D_sign_language_avatar_on_AR_glasses_given_2D_videos_of_human_signers

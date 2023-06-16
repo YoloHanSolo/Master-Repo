@@ -1,3 +1,0 @@
-- custom camera for inspecting hand gestures
-- reset button to default perspective view
-- where focus? 
