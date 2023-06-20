@@ -29,13 +29,27 @@ https://www.researchgate.net/publication/251570702_Dictionary_of_the_Slovenian_S
 SSKJ - Slovar slovenskega knjižnega jezika
 https://fran.si/iskanje?FilteredDictionaryIds=133&View=1&Query=%2A
 
+#8
+Jaklič, A., Vodopivec, D., Komac, V. 1995
+Learning sign language through multimedia
+https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=484935
+
+#9
+Ahmed H. Aliwy, Ahmed A.Alethary 2020
+Development of arabic sign language dictionary using 3D avatar technologies
+https://www.researchgate.net/publication/344903913_Development_of_arabic_sign_language_dictionary_using_3D_avatar_technologies
+
+#10
+Boban Joksimoski, Ivan Chorbev, Katerina Zdravkova
+Toward 3D Avatar Visualization of Macedonian Sign Language
+https://www.researchgate.net/publication/284887299_Toward_3D_Avatar_Visualization_of_Macedonian_Sign_Language (PAPER NOT AVAILABLE)
+
+#11
+Debashis Das Chakladar, Pradeep Kumar, Shubham Mandal, Partha Pratim Roy, Masakazu Iwamura and Byung-Gyu Kim 2021
+3D Avatar Approach for Continuous Sign Movement Using Speech/Text
+https://pdfs.semanticscholar.org/3008/716ce6c4a635d236eac302709807eefc8168.pdf?_gl=1*16jkvzb*_ga*NTQxNjk5OS4xNjg3MjQ3OTUx*_ga_H7P4ZT52H5*MTY4NzI0Nzk1MS4xLjAuMTY4NzI0Nzk1Mi41OS4wLjA.
 
 ##############################################################################################################
-
-
-MAYBE
-
--- Jakliˇc, A., Vodopivec, D., Komac, V.: Learning sign language through multime-dia. In: Proceedings of International Conference on Multimedia Computing andSystems, Washington, pp. 282–285 (1995)
 
 -- 3D Animation framework for sign language 
 https://www.researchgate.net/publication/281434972_3D_Animation_framework_for_sign_language
