@@ -16,7 +16,6 @@ public class BackgroundResponsive : MonoBehaviour
 
     void Update()
     {
-        Debug.Log(transform_canvas.sizeDelta.x);
         transform_element.position = new Vector3(0.0f, 0.0f, 0.0f);
         transform_element.sizeDelta = new Vector2(transform_canvas.sizeDelta.x, transform_canvas.sizeDelta.y);
     }

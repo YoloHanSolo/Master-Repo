@@ -53,7 +53,6 @@ public class TermController : MonoBehaviour
         b_Back.onClick.AddListener(PreviousTerm);
 
         m_Animator = GameObject.Find("SampleCharacter").transform.GetChild(0).gameObject.GetComponent<Animator>();
-
     }
 
     void Update()
@@ -64,8 +63,6 @@ public class TermController : MonoBehaviour
         current_term_index = (current_term_index + 1) % root.dictionary.Length;
         term.SetText(root.dictionary[current_term_index].term);
         definition.SetText(root.dictionary[current_term_index].definition);
-        Debug.Log("NextTerm");
-        Debug.Log(current_term_index);
         m_Animator.SetInteger("AnimationCounter", current_term_index);
     }
 
@@ -76,8 +73,6 @@ public class TermController : MonoBehaviour
         }     
         term.SetText(root.dictionary[current_term_index].term);
         definition.SetText(root.dictionary[current_term_index].definition);
-        Debug.Log("PreviousTerm");
-        Debug.Log(current_term_index);
         m_Animator.SetInteger("AnimationCounter", current_term_index);
     }
 
