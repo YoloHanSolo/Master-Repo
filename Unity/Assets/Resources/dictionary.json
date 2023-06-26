@@ -1,24 +1,28 @@
 {
 	"dictionary": [
 		{
-			"term": "Renesansa",
-			"definition": "Renesansa je obdobje evropske zgodovine, ki pokriva razpon med 14. in 17. stoletjem in označuje prehod iz srednjega veka v novi vek."
+			"term": "Trajnostni razvoj",
+			"definition": "Trajnostni razvoj je zamisel o razvoju človeške družbe, pri katerem bi se izognili nevarnosti, ki jih povzroča osredotočenje na količinski materialni razvoj z izčrpavanjem naravnih virov in onesnaževanjem okolja. S trajnostnim razvojem naj bi se tudi ohranjala biološka raznovrstnost.\n\n(https://fran.si/131/snb-slovar-novejsega-besedja/3624178/trajnostni?View=1&Query=strategija&AllNoHeadword=strategija&FilteredDictionaryIds=131)"
 		},
 		{
-			"term": "TERM 2",
-			"definition": "DEFINITION 2\ndeževno"
+			"term": "Antigenski test",
+			"definition": "Antigenski test ali hitri antigentski test HAT je e hitri diagnostični test, primeren za testiranje na mestu oskrbe, ki neposredno zazna prisotnost ali odsotnost antigena. Običajno se uporablja za odkrivanje virusa SARS-CoV-2, ki povzroča COVID-19.\n\n(https://sl.wikipedia.org/wiki/Hitri_antigenski_test)"
 		},
 		{
-			"term": "TERM 3",
-			"definition": "DEFINITION 3\noblačno"
+			"term": "Izredna pravna sredstva",
+			"definition": "V primeru, da se stranka ne strinja z odločitvijo sodišča, lahko vloži pravno sredstvo. Redni pravni sredstvi sta pritožba in ugovor, najpogostejši izredni pravni sredstvi pa sta revizija in zahteva za varstvo zakonitosti.\n\n(https://nasodiscu.si/pravna-sredstva)"
 		},
 		{
-			"term": "TERM 4",
-			"definition": "DEFINITION 4\nvzhod"
+			"term": "Emancipacija",
+			"definition": "Pridobitev enakopravnega položaja: boj nerazvitih držav za ekonomsko emancipacijo; nacionalna, politična, rasna emancipacija; težnja po emancipaciji / ženska emancipacija pridobitev enakopravnega položaja žensk z moškimi; gibanje za emancipacijo žene v družbi / duhovna emancipacija.\n\n(https://fran.si/130/sskj-slovar-slovenskega-knjiznega-jezika/3540443/emancipacija?All=rasna&IsAdvanced=True&FilteredDictionaryIds=130)"
 		},
 		{
-			"term": "TERM 5",
-			"definition": "DEFINITION 5\nzahod"
+			"term": "Evropska centralna banka",
+			"definition": "Evropska centralna banka ECB je centralna banka Evropske Unije, ki skrbi za fiskalno in monetarno politiko uradne valute - evro.\n\n(https://sl.wikipedia.org/wiki/Evropska_centralna_banka)"
+		},
+		{
+			"term": "Neoporečen",
+			"definition": "Ta ki ni oporečen: neoporečen dokaz; njegova trditev je bila neoporečna / njena obleka je bila vselej neoporečna / neoporečno vedenje 2. ki ima pozitivne lastnosti zlasti v moralnem pogledu: neoporečen človek; idejno, politično neoporečen / ima neoporečno preteklost; pošteno, neoporečno življenje.\n\n(https://fran.si/133/sskj2-slovar-slovenskega-knjiznega-jezika-2/4500091/neoporecen?View=1&Query=neopore%c4%8den)"
 		}
 	]
 }

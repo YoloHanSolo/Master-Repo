@@ -56,3 +56,6 @@ https://www.researchgate.net/publication/281434972_3D_Animation_framework_for_si
 
 -- Automatic generation of a 3D sign language avatar on AR glasses given 2D videos of human signers
 https://www.researchgate.net/publication/355576067_Automatic_generation_of_a_3D_sign_language_avatar_on_AR_glasses_given_2D_videos_of_human_signers
+
+
+https://wsa-global.org/winner/simax-the-sign-language-avatar-system/
