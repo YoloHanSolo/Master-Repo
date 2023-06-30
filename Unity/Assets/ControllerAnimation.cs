@@ -20,12 +20,13 @@ public class JsonRoot
 }
 
 
-public class ControllerAnimator : MonoBehaviour
+public class ControllerAnimation : MonoBehaviour
 {
     bool playing;
 
     public Sprite sprite_play;
     public Sprite sprite_pause;
+    public Sprite sprite_resume;
 
     Button button_playPause;
     Button button_stop;
@@ -144,7 +145,7 @@ public class ControllerAnimator : MonoBehaviour
 
     void PlayPauseHandler() {
         if (playing) { 
-            Animation_Stop_Playing();
+            Animation_Pause_Playing();
         } else {
             if (animator_state_info.normalizedTime > 0.99f) {
                 animator_state_info = animator.GetCurrentAnimatorStateInfo(0);
@@ -183,6 +184,12 @@ public class ControllerAnimator : MonoBehaviour
         playing = true;
         animator.speed = slider_animation_speed.value;
         button_playPause.image.sprite = sprite_pause;
+    }
+
+    void Animation_Pause_Playing() {
+        playing = false;
+        animator.speed = 0.0f;
+        button_playPause.image.sprite = sprite_resume;
     }
 
     void Animation_Stop_Playing() {
