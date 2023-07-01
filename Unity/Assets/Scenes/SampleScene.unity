@@ -2245,6 +2245,8 @@ MonoBehaviour:
   sprite_play: {fileID: 21300000, guid: d2a71c085d005174fbf0a8227a2d8b74, type: 3}
   sprite_pause: {fileID: 21300000, guid: 3b47246a3540c2b4d8c7eb81fd1b5f58, type: 3}
   sprite_resume: {fileID: 21300000, guid: f63d233a2e80ea1479cd8b68ff7a1d93, type: 3}
+  sprite_mirror_1: {fileID: 21300000, guid: a923960127a7dbe4fbeb684f1f96e73e, type: 3}
+  sprite_mirror_2: {fileID: 21300000, guid: f6f9b6d478f9f004cac69eef2611359f, type: 3}
 --- !u!1 &811240340
 GameObject:
   m_ObjectHideFlags: 0
@@ -2910,8 +2912,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -45, y: 900}
-  m_SizeDelta: {x: 80, y: 40}
+  m_AnchoredPosition: {x: -30, y: 900}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1084690246
 MonoBehaviour:
@@ -3360,8 +3362,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -130, y: 900}
-  m_SizeDelta: {x: 80, y: 40}
+  m_AnchoredPosition: {x: -90, y: 900}
+  m_SizeDelta: {x: 50, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1521343003
 MonoBehaviour:
@@ -3994,7 +3996,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 237d6d66964a41e4aad6f4561c473d18, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a923960127a7dbe4fbeb684f1f96e73e, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

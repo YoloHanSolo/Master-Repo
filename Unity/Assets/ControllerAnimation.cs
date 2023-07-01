@@ -27,9 +27,12 @@ public class ControllerAnimation : MonoBehaviour
     public Sprite sprite_play;
     public Sprite sprite_pause;
     public Sprite sprite_resume;
+    public Sprite sprite_mirror_1;
+    public Sprite sprite_mirror_2;
 
     Button button_playPause;
     Button button_stop;
+    Button button_mirror;
     Button button_next;
     Button button_prev;
 
@@ -43,6 +46,7 @@ public class ControllerAnimation : MonoBehaviour
     TMP_Text definition;
 
     Animator animator;
+    GameObject lynn;
     AnimatorStateInfo animator_state_info;
 
     int current_term_index = 0; 
@@ -58,6 +62,7 @@ public class ControllerAnimation : MonoBehaviour
     void Start()
     {
         animator = GameObject.Find("Lynn").GetComponent<Animator>();
+        lynn = GameObject.Find("Lynn");
         term = GameObject.Find("Word").GetComponent<TextMeshProUGUI>();
         definition = GameObject.Find("Definition").GetComponent<TextMeshProUGUI>();
 
@@ -124,6 +129,9 @@ public class ControllerAnimation : MonoBehaviour
 
         button_prev = GameObject.Find("Button_Prev").GetComponent<Button>();
         button_prev.onClick.AddListener(Handle_Button_Prev);
+
+        button_mirror = GameObject.Find("Button_Mirror").GetComponent<Button>();
+        button_mirror.onClick.AddListener(Handle_Button_Mirror);
     }
 
     void initDictionary() {
@@ -178,6 +186,16 @@ public class ControllerAnimation : MonoBehaviour
         definition.SetText(root.dictionary[current_term_index].definition);
         animator.SetInteger("AnimationCounter", current_term_index);
         Animation_Start_Playing();
+    }
+
+    void Handle_Button_Mirror() {
+        if (lynn.transform.localScale.x == 1) {
+            lynn.transform.localScale = new Vector3(-1, 1, 1);
+            button_mirror.image.sprite = sprite_mirror_2;
+        } else {
+            lynn.transform.localScale = new Vector3(1, 1, 1);
+            button_mirror.image.sprite = sprite_mirror_1;
+        }
     }
 
     void Animation_Start_Playing() {
