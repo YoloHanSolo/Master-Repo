@@ -89,8 +89,8 @@ public class ControllerAnimation : MonoBehaviour
                 animator.Play(animator_state_info.fullPathHash, 0, 0.0f);
                 Animation_Stop_Playing();
             }
+        }
 
-        } 
     }
 
     //////////
