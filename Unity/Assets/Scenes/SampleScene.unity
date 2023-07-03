@@ -3516,8 +3516,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -336.6001, y: 203.98865}
-  m_SizeDelta: {x: 184.4468, y: 223.4806}
+  m_AnchoredPosition: {x: -315.39, y: 185.73941}
+  m_SizeDelta: {x: 491.9726, y: 240.1394}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1562273262
 MonoBehaviour:
@@ -3532,7 +3532,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.12156863}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -3572,6 +3572,7 @@ MonoBehaviour:
   cursorTexture: {fileID: 2800000, guid: 9874865a09fea384da5821c49f9cfb1c, type: 3}
   cursorMode: 0
   hotSpot: {x: 0, y: 0}
+  rotation_sensitivity: 50
 --- !u!1 &1566166241
 GameObject:
   m_ObjectHideFlags: 0
