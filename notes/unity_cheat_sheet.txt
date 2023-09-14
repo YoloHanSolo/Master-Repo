@@ -1,0 +1,14 @@
+UNITY CHEAT SHEET
+
+
+object find - GameObject.Find("object name");
+object name - object.name
+object children list - object.GetComponentsInChildren<Transform>();
+
+
+
+ANIMATIONS
+
+1) export fbx
+2) add file to unity assets
+3) under aniamtion add component Animator

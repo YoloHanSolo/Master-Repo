@@ -1,0 +1,3 @@
+- Animirani kretalec + video razlaga + slika s kontekstom + predstavitev s prstno abecedo
+- Vmesnik za dodajanje novih pojmov
+- Avomatska prepoznava in animiranje kretalca

@@ -8,3 +8,6 @@ Unity/Temp
 Unity/UserSettings
 #
 Unity/Assets/TextMesh Pro
+#
+blender/*.blend
+blender/*.blend1

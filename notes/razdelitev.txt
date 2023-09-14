@@ -1,0 +1,28 @@
+UVOD 
+
+razvoj tehnologij
+selitev storitev na splet
+problem z dostopnostjo pri invalidih
+rešitve
+
+DOSTOPNOST
+
+invalidnost
+vrste invalidov
+gluhi in naglušni
+dostoponost na spletu za gluhe in naglušne
+uporaba znakovnega jezika
+učenje znakovnega jezika
+problem pri učenju
+slovarji za učenje
+
+PREGLED PODROČJA
+
+prvi slovar znakovnega jezika v sloveniji
+
+
+TEHNOLOGIJE 
+
+- UNITY
+
+- BLENDER
