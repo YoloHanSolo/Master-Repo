@@ -13,7 +13,7 @@ public class ControllerRotate : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     public float rotation_sensitivity = 50.0f;
 
-    GameObject lynn;
+    public GameObject lynn;
 
     Vector3 mouse_now;
     Vector3 mouse_prev;
@@ -23,7 +23,7 @@ public class ControllerRotate : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     void Start()
     {   
-        lynn = GameObject.Find("Lynn");
+        //lynn = GameObject.Find("Lynn");
     }
 
     void Update() {
@@ -36,6 +36,11 @@ public class ControllerRotate : MonoBehaviour, IPointerEnterHandler, IPointerExi
         if (mouse_over) {
             if (Input.GetMouseButton(0)) {
                 lynn.transform.eulerAngles += new Vector3(0, -mouse_delta_x * rotation_sensitivity * Time.deltaTime, 0);
+                if (lynn.transform.eulerAngles.y < 60) {
+                    lynn.transform.eulerAngles = new Vector3(0, 60, 0);
+                } else if (lynn.transform.eulerAngles.y > 300) {
+                    lynn.transform.eulerAngles = new Vector3(0, 300, 0);               
+                }
             }
             if (Input.GetMouseButton(1)) {
                 lynn.transform.eulerAngles = new Vector3(0, 180, 0);

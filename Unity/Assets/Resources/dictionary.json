@@ -1,28 +1,44 @@
 {
 	"dictionary": [
 		{
-			"term": "Trajnostni razvoj",
-			"definition": "Trajnostni razvoj je zamisel o razvoju človeške družbe, pri katerem bi se izognili nevarnosti, ki jih povzroča osredotočenje na količinski materialni razvoj z izčrpavanjem naravnih virov in onesnaževanjem okolja. S trajnostnim razvojem naj bi se tudi ohranjala biološka raznovrstnost.\n\n(https://fran.si/131/snb-slovar-novejsega-besedja/3624178/trajnostni?View=1&Query=strategija&AllNoHeadword=strategija&FilteredDictionaryIds=131)"
-		},
-		{
 			"term": "Antigenski test",
-			"definition": "Antigenski test ali hitri antigentski test HAT je hitri diagnostični test, primeren za testiranje na mestu oskrbe, ki neposredno zazna prisotnost ali odsotnost antigena. Običajno se uporablja za odkrivanje virusa SARS-CoV-2, ki povzroča COVID-19.\n\n(https://sl.wikipedia.org/wiki/Hitri_antigenski_test)"
+			"definition": "Hitri antigenski test (HAT) je diagnostični test, ki se uporablja za zgodnje odkrivanje specifičnih beljakovin, ki so povezani s prisotnostjo nalezljivega organizma, na primer virusa. Ta vrsta testa se običajno uporablja za hitro preverjanje, ali je oseba okužena z določenim virusom, kot je virus SARS-CoV-2, ki povzroča COVID-19. So enostavni za izvedbo ter običajno zagotavljajo rezultate v nekaj minutah."
 		},
 		{
-			"term": "Izredna pravna sredstva",
-			"definition": "V primeru, da se stranka ne strinja z odločitvijo sodišča, lahko vloži pravno sredstvo. Redni pravni sredstvi sta pritožba in ugovor, najpogostejši izredni pravni sredstvi pa sta revizija in zahteva za varstvo zakonitosti.\n\n(https://nasodiscu.si/pravna-sredstva)"
+			"term": "Digitalno spletno potrdilo",
+			"definition": "Digitalno potrdilo je naša identiteta v digitalnem svetu. Je računalniški zapis, ki vsebuje podatke o lastniku. Potrebujemo ga za varno elektronsko komuniciranje z državnimi in drugimi portali ter aplikacijami. Z njim izkazujete svojo identiteto in se elektronsko podpisujete."
 		},
 		{
 			"term": "Emancipacija",
-			"definition": "Pridobitev enakopravnega položaja: boj nerazvitih držav za ekonomsko emancipacijo; nacionalna, politična, rasna emancipacija; težnja po emancipaciji / ženska emancipacija pridobitev enakopravnega položaja žensk z moškimi; gibanje za emancipacijo žene v družbi / duhovna emancipacija.\n\n(https://fran.si/130/sskj-slovar-slovenskega-knjiznega-jezika/3540443/emancipacija?All=rasna&IsAdvanced=True&FilteredDictionaryIds=130)"
+			"definition": "Emancipacija je koncept, ki se nanaša na proces osvobajanja posameznikov ali skupin iz socialnih, političnih, ekonomskih ali kulturnih omejitev, ki jim preprečujejo enakopravno sodelovanje v družbi. Ta proces pogosto poudarja pridobivanje enakih pravic, svoboščin in priložnosti za vse člane družbe, ne glede na njihov spol, rasno, etnično, versko ali druge značilnosti."
 		},
 		{
 			"term": "Evropska centralna banka",
-			"definition": "Evropska centralna banka ECB je centralna banka Evropske Unije, ki skrbi za fiskalno in monetarno politiko uradne valute - evro.\n\n(https://sl.wikipedia.org/wiki/Evropska_centralna_banka)"
+			"definition": "Evropska centralna banka (ECB) je glavna finančna institucija, odgovorna za izvajanje denarne politike za države članice evrskega območja v Evropski uniji."
+		},
+		{
+			"term": "Izredna pravna sredstva",
+			"definition": "Izredna pravna sredstva, ki jih posamezniki ali organizacije lahko uporabijo za pravno zaščito svojih pravic, če menijo, da so bile njihove pravice kršene in če ni več možnosti za pritožbo v okviru običajnega pravosodnega postopka. Izredna pravna sredstva so namenjena reševanju izjemnih situacij, ko so osnovne pravice ogrožene ali kršene in je treba zagotoviti pravno zaščito."
+		},
+		{
+			"term": "Izvršilni postopek",
+			"definition": "Izvršilni postopek je pravni postopek, ki se uporablja za uveljavljanje izvršljivih sodb, odločb in drugih izvršljivih dokumentov, s katerimi se odredi izpolnitev določenih obveznosti, denarne odškodnine ali drugih zahtevkov."
 		},
 		{
 			"term": "Neoporečen",
-			"definition": "Ta ki ni oporečen: neoporečen dokaz; njegova trditev je bila neoporečna / njena obleka je bila vselej neoporečna / neoporečno vedenje 2. ki ima pozitivne lastnosti zlasti v moralnem pogledu: neoporečen človek; idejno, politično neoporečen / ima neoporečno preteklost; pošteno, neoporečno življenje.\n\n(https://fran.si/133/sskj2-slovar-slovenskega-knjiznega-jezika-2/4500091/neoporecen?View=1&Query=neopore%c4%8den)"
-		}
+			"definition": "Beseda neoporečen se uporablja za označevanje stanja ali lastnosti, ki je brez napak, pomanjkljivosti, napak ali hib. Biti neoporečen pomeni, da ne obstajajo pomanjkljivosti ali napake, ki bi lahko vplivale na popolnost, celovitost ali kakovost nečesa. Ta izraz se pogosto uporablja v različnih kontekstih, vključno z etičnimi, moralnimi, pravnimi, tehničnimi in drugimi."
+		},
+		{
+			"term": "Pandemija",
+			"definition": "Pandemija je epidemija nalezljive bolezni, ki se širi po večjem območju, na večjih geografskih območjih, celinah ali po celem svetu. Pandemije so obsežne in močno vplivajo na zdravje ljudi, družbo in gospodarstvo ter zahtevajo globalno pozornost in ukrepanje, da se obvladajo in preprečijo nadaljnje širjenje bolezni."
+		},
+		{
+			"term": "Trajnostni razvoj",
+			"definition": "Trajnostni razvoj je razvojni pristop, ki sledi načelu zadovoljevanja trenutnih potreb človeštva, ne da bi ogrozili sposobnost prihodnjih generacij, da zadovoljijo svoje potrebe. Ta koncept poudarja ravnovesje med gospodarskim, družbenim in okoljskim vidikom razvoja in se osredotoča na dolgoročno vzdržnost človeške dejavnosti in upravljanje naravnih virov."
+		},
+		{
+			"term": "Umetna inteligenca",
+			"definition": "Umetna inteligenca (UI) je področje računalništva, ki se ukvarja z razvojem sistemov in programov, ki imajo sposobnost opravljanja nalog, ki običajno zahtevajo človeško inteligenco. Ti sistemi in programi so oblikovani za razumevanje, učenje, sklepanje, reševanje problemov in izvajanje nalog na način, ki posnema človeško razmišljanje."
+		}	
 	]
 }

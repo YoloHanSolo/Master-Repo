@@ -46,10 +46,12 @@ public class ControllerAnimation : MonoBehaviour
     TMP_Text definition;
 
     Animator animator;
-    GameObject lynn;
+    public GameObject lynn;
     AnimatorStateInfo animator_state_info;
 
     int current_term_index = 0; 
+
+    ColorBlock color;
 
     private void EventHandler(BaseEventData eventData) {
         animator.Play(animator_state_info.fullPathHash, 0, slider_animation_elapsed.value);
@@ -61,16 +63,24 @@ public class ControllerAnimation : MonoBehaviour
 
     void Start()
     {
-        animator = GameObject.Find("Lynn").GetComponent<Animator>();
-        lynn = GameObject.Find("Lynn");
+        animator = lynn.GetComponent<Animator>();
+        //animator = GameObject.Find("Lynn").GetComponent<Animator>();
+        //lynn = GameObject.Find("Lynn");
         term = GameObject.Find("Dictionary_Term").GetComponent<TextMeshProUGUI>();
         definition = GameObject.Find("Dictionary_Definition").GetComponent<TextMeshProUGUI>();
+
+        color.disabledColor = new Color(0.75f, 0.75f, 0.75f, 1);
+        color.highlightedColor = new Color(1, 1, 1, 1);
+        color.normalColor = new Color(0.75f, 0.75f, 0.75f, 1);
+        color.pressedColor = new Color(0.75f, 0.75f, 0.75f, 1);
+        color.selectedColor = new Color(0.75f, 0.75f, 0.75f, 1);
+        color.colorMultiplier = 1.0f;
 
         initSliderAnimationElapsed();
         initSliderAnimationSpeed();
         initButtons();
         initDictionary();
-  
+
         playing = true;
     }
 
@@ -132,6 +142,13 @@ public class ControllerAnimation : MonoBehaviour
 
         button_mirror = GameObject.Find("Button_Mirror").GetComponent<Button>();
         button_mirror.onClick.AddListener(Handle_Button_Mirror);
+
+
+        button_mirror.colors = color;
+        button_playPause.colors = color;
+        button_stop.colors = color;
+        button_prev.colors = color;
+        button_next.colors = color;
     }
 
     void initDictionary() {
