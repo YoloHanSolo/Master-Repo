@@ -46,7 +46,7 @@ public class ControllerCamera : MonoBehaviour
 
         color_disabled.disabledColor = new Color(1, 1, 1, 1);
         color_disabled.highlightedColor = new Color(0.75f, 0.75f, 0.75f, 1);
-        color_disabled.normalColor = new Color(0.5f, 0.5f, 0.5f, 1);
+        color_disabled.normalColor = new Color(0.35f, 0.35f, 0.35f, 1);
         color_disabled.pressedColor = new Color(1, 1, 1, 1);
         color_disabled.selectedColor = new Color(1, 1, 1, 1);
         color_disabled.colorMultiplier = 1.0f;

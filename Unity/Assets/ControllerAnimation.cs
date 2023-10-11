@@ -63,8 +63,8 @@ public class ControllerAnimation : MonoBehaviour
     {
         animator = GameObject.Find("Lynn").GetComponent<Animator>();
         lynn = GameObject.Find("Lynn");
-        term = GameObject.Find("Word").GetComponent<TextMeshProUGUI>();
-        definition = GameObject.Find("Definition").GetComponent<TextMeshProUGUI>();
+        term = GameObject.Find("Dictionary_Term").GetComponent<TextMeshProUGUI>();
+        definition = GameObject.Find("Dictionary_Definition").GetComponent<TextMeshProUGUI>();
 
         initSliderAnimationElapsed();
         initSliderAnimationSpeed();
