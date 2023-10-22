@@ -1,0 +1,15 @@
+START 10/22/2023 3:39:02 PM
+CLICK Slider_AnimationElapsed 17:39:03.498
+CLICK Slider_AnimationElapsed 17:39:03.572
+CLICK Slider_AnimationElapsed 17:39:03.599
+Clicks:
+	Button_PerspectiveDefault: 0
+	Button_PerspectiveFace: 0
+	Button_PerspectiveHands: 0
+	Button_Mirror: 0
+	Button_Stop: 0
+	Button_Play: 0
+	Button_Prev: 0
+	Button_Next: 0
+	Slider_Elapsed: 3
+	Slider_Speed: 0
