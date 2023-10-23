@@ -1,0 +1,45 @@
+uvod
+- zakoni -> zdsma
+- osnova evropska direktiva 2016
+- nov zakon o dostopnosti proizvodov zdpsi - european accessibility act
+- use case z avtomatizacijo -> overlay?
+- 1500 ljudi materni jezik, pregled področja
+- manjši vokabular - 20k
+- sszj - v obliki videa
+- zato ideja za nov pristop z avatarjem
+
+pregled področja
+- razišči kako se ljudje učijo
+- zgodovina
+
+rešitve
+- text-to-avatar?
+- razne aplikacije
+- razne rešitve
+
+avatar
+- kako smo naredili?
+- metode
+- prednosti?
+
+postopek evalvacije
+- pigni ko narediš animacije
+- bomo naredili vprašalniki
+- po možnosti 2 skupini?
+
+potencialna področja uporabe avatarja
+- zgodovina v AR VR
+- učenje otrok
+- customizable
+- skins
+- VR/AR
+- standardizacija
+
+hardware requirements
+- opiši
+
+-------------
+za evalvacijo potrebujemo:
+- potrebuje znanje znakovnega jezika
+- lahkot tudi 2. skupina samo učenje (tudi brez prvotnega znanja zj)
+- aspekt razumevanja in aspekt učenja
