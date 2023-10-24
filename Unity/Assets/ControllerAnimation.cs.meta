@@ -3,7 +3,13 @@ guid: 501d4c67c8454b64db43350ec7f9f582
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - sprite_play: {instanceID: 0}
+  - sprite_pause: {instanceID: 0}
+  - sprite_resume: {instanceID: 0}
+  - sprite_mirror_1: {instanceID: 0}
+  - sprite_mirror_2: {instanceID: 0}
+  - lynn: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

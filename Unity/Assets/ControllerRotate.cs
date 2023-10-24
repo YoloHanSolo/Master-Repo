@@ -36,14 +36,17 @@ public class ControllerRotate : MonoBehaviour, IPointerEnterHandler, IPointerExi
         if (mouse_over) {
             if (Input.GetMouseButton(0)) {
                 lynn.transform.eulerAngles += new Vector3(0, -mouse_delta_x * rotation_sensitivity * Time.deltaTime, 0);
-                if (lynn.transform.eulerAngles.y < 60) {
-                    lynn.transform.eulerAngles = new Vector3(0, 60, 0);
-                } else if (lynn.transform.eulerAngles.y > 300) {
-                    lynn.transform.eulerAngles = new Vector3(0, 300, 0);               
+
+                if (lynn.transform.rotation[1] > 0.83) {
+                    if (lynn.transform.rotation[3] > 0 ) {
+                        lynn.transform.eulerAngles = new Vector3(0, 110, 0);
+                    } else {
+                        lynn.transform.eulerAngles = new Vector3(0, -110, 0);
+                    }
                 }
             }
             if (Input.GetMouseButton(1)) {
-                lynn.transform.eulerAngles = new Vector3(0, 180, 0);
+                lynn.transform.eulerAngles = new Vector3(0, 0, 0);
             }
         }
 
