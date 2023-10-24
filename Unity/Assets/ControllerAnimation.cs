@@ -24,6 +24,8 @@ public class ControllerAnimation : MonoBehaviour
 {
     bool playing;
 
+    bool mimic;
+
     public Sprite sprite_play;
     public Sprite sprite_pause;
     public Sprite sprite_resume;
@@ -33,6 +35,7 @@ public class ControllerAnimation : MonoBehaviour
     Button button_playPause;
     Button button_stop;
     Button button_mirror;
+    Button button_mimic;
     Button button_next;
     Button button_prev;
 
@@ -58,6 +61,7 @@ public class ControllerAnimation : MonoBehaviour
         animator.speed = 0.0f;
 
         playing = false;
+        mimic = true;
         button_playPause.image.sprite = sprite_play;
     }
 
@@ -143,8 +147,11 @@ public class ControllerAnimation : MonoBehaviour
         button_mirror = GameObject.Find("Button_Mirror").GetComponent<Button>();
         button_mirror.onClick.AddListener(Handle_Button_Mirror);
 
+        button_mimic = GameObject.Find("Button_Mimic").GetComponent<Button>();
+        button_mimic.onClick.AddListener(Handle_Button_Mimic);
 
         button_mirror.colors = color;
+        button_mimic.colors = color;
         button_playPause.colors = color;
         button_stop.colors = color;
         button_prev.colors = color;
@@ -213,6 +220,11 @@ public class ControllerAnimation : MonoBehaviour
             lynn.transform.localScale = new Vector3(1, 1, 1);
             button_mirror.image.sprite = sprite_mirror_1;
         }
+    }
+
+    void Handle_Button_Mimic() {
+        mimic = !mimic;
+        animator.SetBool("MimicBool", mimic);
     }
 
     void Animation_Start_Playing() {
