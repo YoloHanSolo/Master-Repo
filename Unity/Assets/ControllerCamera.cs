@@ -17,6 +17,8 @@ public class ControllerCamera : MonoBehaviour
     ColorBlock color_enabled;
     ColorBlock color_disabled;
 
+    GameObject avatar;
+
     void Start()
     {
         button_perspective_default = GameObject.Find("Button_PerspectiveDefault").GetComponent<Button>();
@@ -37,23 +39,7 @@ public class ControllerCamera : MonoBehaviour
         camera_hands.gameObject.SetActive(false);
         camera_face.gameObject.SetActive(false);
 
-        color_enabled.disabledColor = new Color(1, 1, 1, 1);
-        color_enabled.highlightedColor = new Color(1, 1, 1, 1);
-        color_enabled.normalColor = new Color(1, 1, 1, 1);
-        color_enabled.pressedColor = new Color(1, 1, 1, 1);
-        color_enabled.selectedColor = new Color(1, 1, 1, 1);
-        color_enabled.colorMultiplier = 1.0f;
-
-        color_disabled.disabledColor = new Color(1, 1, 1, 1);
-        color_disabled.highlightedColor = new Color(0.75f, 0.75f, 0.75f, 1);
-        color_disabled.normalColor = new Color(0.6f, 0.6f, 0.6f, 1);
-        color_disabled.pressedColor = new Color(1, 1, 1, 1);
-        color_disabled.selectedColor = new Color(1, 1, 1, 1);
-        color_disabled.colorMultiplier = 1.0f;
-
-        button_perspective_default.colors = color_enabled;
-        button_perspective_hands.colors = color_disabled;
-        button_perspective_face.colors = color_disabled;
+        avatar = GameObject.Find("Avatar");
     }
 
     void Update() {
@@ -62,38 +48,26 @@ public class ControllerCamera : MonoBehaviour
 
     void Handle_Button_Default() {
         button_perspective_default.Select();
-
-        button_perspective_default.colors = color_enabled;
-        button_perspective_hands.colors = color_disabled;
-        button_perspective_face.colors = color_disabled;
-
         camera_default.gameObject.SetActive(true);
         camera_hands.gameObject.SetActive(false);
         camera_face.gameObject.SetActive(false);
+        avatar.transform.eulerAngles = new Vector3(0, 0, 0);
     }
 
     void Handle_Button_Hands() {
         button_perspective_hands.Select();
-
-        button_perspective_default.colors = color_disabled;
-        button_perspective_hands.colors = color_enabled;
-        button_perspective_face.colors = color_disabled;
-
         camera_default.gameObject.SetActive(false);
         camera_hands.gameObject.SetActive(true);
         camera_face.gameObject.SetActive(false);
+        avatar.transform.eulerAngles = new Vector3(0, 0, 0);
     }
 
     void Handle_Button_Face() {
         button_perspective_face.Select();
-
-        button_perspective_default.colors = color_disabled;
-        button_perspective_hands.colors = color_disabled;
-        button_perspective_face.colors = color_enabled;
-
         camera_default.gameObject.SetActive(false);
-        camera_hands.gameObject.SetActive(false);
+        camera_hands.gameObject.SetActive(true);
         camera_face.gameObject.SetActive(true);
+        avatar.transform.eulerAngles = new Vector3(0, 0, 0);
     }
 
 }

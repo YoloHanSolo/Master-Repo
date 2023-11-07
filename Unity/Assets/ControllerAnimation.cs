@@ -149,13 +149,14 @@ public class ControllerAnimation : MonoBehaviour
 
         button_mimic = GameObject.Find("Button_Mimic").GetComponent<Button>();
         button_mimic.onClick.AddListener(Handle_Button_Mimic);
-
+        /*
         button_mirror.colors = color;
         button_mimic.colors = color;
         button_playPause.colors = color;
         button_stop.colors = color;
         button_prev.colors = color;
         button_next.colors = color;
+        */
     }
 
     void initDictionary() {
