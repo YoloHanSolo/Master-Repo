@@ -23,7 +23,6 @@ public class ControllerRotate : MonoBehaviour, IPointerEnterHandler, IPointerExi
 
     void Start()
     {   
-        //lynn = GameObject.Find("Lynn");
     }
 
     void Update() {
