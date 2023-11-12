@@ -11,3 +11,5 @@ Unity/Assets/TextMesh Pro
 #
 blender/*.blend
 blender/*.blend1
+blender/old/*.blend
+blender/old/*.blend1
