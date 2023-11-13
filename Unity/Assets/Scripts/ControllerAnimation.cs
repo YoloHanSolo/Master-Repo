@@ -31,6 +31,9 @@ public class ControllerAnimation : MonoBehaviour
     public Sprite sprite_resume;
     public Sprite sprite_mirror_1;
     public Sprite sprite_mirror_2;
+    public Sprite sprite_mimic_yes;
+    public Sprite sprite_mimic_no;
+
 
     Button button_playPause;
     Button button_stop;
@@ -61,7 +64,6 @@ public class ControllerAnimation : MonoBehaviour
         animator.speed = 0.0f;
 
         playing = false;
-        mimic = true;
         button_playPause.image.sprite = sprite_play;
     }
 
@@ -85,6 +87,7 @@ public class ControllerAnimation : MonoBehaviour
         initButtons();
         initDictionary();
 
+        mimic = true;
         playing = true;
     }
 
@@ -226,6 +229,11 @@ public class ControllerAnimation : MonoBehaviour
     void Handle_Button_Mimic() {
         mimic = !mimic;
         animator.SetBool("MimicBool", mimic);
+        if (mimic) {
+            button_mimic.image.sprite = sprite_mimic_no;
+        } else {
+            button_mimic.image.sprite = sprite_mimic_yes;
+        }
     }
 
     void Animation_Start_Playing() {

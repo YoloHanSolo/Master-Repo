@@ -15,22 +15,21 @@ public class Logger : MonoBehaviour
     string log_filename;
     string log_path;
 
-    Button button_view_1;
-    Button button_view_2;
-    Button button_view_3;
+    Button button_perspective;
     Button button_mirror;
+    Button button_mimic;
     Button button_stop;
     Button button_play;
     Button button_prev;
     Button button_next;
 
-    Slider slider_speed;
     Slider slider_elapsed;
 
-    Counter counter_button_view_1 = new Counter();
-    Counter counter_button_view_2 = new Counter();
-    Counter counter_button_view_3 = new Counter();
+    Slider slider_speed;
+
+    Counter counter_button_perspective = new Counter();
     Counter counter_button_mirror = new Counter();
+    Counter counter_button_mimic = new Counter();
     Counter counter_button_stop = new Counter();
     Counter counter_button_play = new Counter();
     Counter counter_button_next = new Counter();
@@ -52,9 +51,8 @@ public class Logger : MonoBehaviour
 
         writeToFile("START " + DateTime.UtcNow);
 
-        button_view_1 = GameObject.Find("Button_PerspectiveDefault").GetComponent<Button>();
-        button_view_2 = GameObject.Find("Button_PerspectiveFace").GetComponent<Button>();
-        button_view_3 = GameObject.Find("Button_PerspectiveHands").GetComponent<Button>();
+        button_perspective = GameObject.Find("Button_Perspective").GetComponent<Button>();
+        button_mimic = GameObject.Find("Button_Mimic").GetComponent<Button>();
         button_mirror = GameObject.Find("Button_Mirror").GetComponent<Button>();
         button_stop = GameObject.Find("Button_Stop").GetComponent<Button>();
         button_play = GameObject.Find("Button_PlayPause").GetComponent<Button>();
@@ -64,17 +62,15 @@ public class Logger : MonoBehaviour
         slider_elapsed = GameObject.Find("Slider_AnimationElapsed").GetComponent<Slider>();
         slider_speed = GameObject.Find("Slider_AnimationSpeed").GetComponent<Slider>();
 
-        button_view_1.onClick.AddListener(delegate {LogName(button_view_1.name, counter_button_view_1);});
-        button_view_2.onClick.AddListener(delegate {LogName(button_view_2.name, counter_button_view_2);});
-        button_view_3.onClick.AddListener(delegate {LogName(button_view_3.name, counter_button_view_3);});
+        button_perspective.onClick.AddListener(delegate {LogName(button_perspective.name, counter_button_perspective);});
         button_mirror.onClick.AddListener(delegate {LogName(button_mirror.name, counter_button_mirror);});
         button_stop.onClick.AddListener(delegate {LogName(button_stop.name, counter_button_stop);});
         button_play.onClick.AddListener(delegate {LogName(button_play.name, counter_button_play);});
         button_next.onClick.AddListener(delegate {LogName(button_next.name, counter_button_next);});
         button_prev.onClick.AddListener(delegate {LogName(button_prev.name, counter_button_prev);});
 
-        slider_elapsed.onValueChanged.AddListener(delegate {LogName(slider_elapsed.name, counter_slider_elapsed);});
-        slider_speed.onValueChanged.AddListener(delegate {LogName(slider_speed.name, counter_slider_speed);});
+        //slider_elapsed.onValueChanged.AddListener(delegate {LogName(slider_elapsed.name, counter_slider_elapsed);});
+        //slider_speed.onValueChanged.AddListener(delegate {LogName(slider_speed.name, counter_slider_speed);});
     }
 
     void Update() {
@@ -106,48 +102,21 @@ public class Logger : MonoBehaviour
     {
         string to_write = string.Format(
             "\nClicks:" + 
-            "\n\tButton_PerspectiveDefault: {0}" + 
-            "\n\tButton_PerspectiveFace: {1}" +
-            "\n\tButton_PerspectiveHands: {2}" +
-            "\n\tButton_Mirror: {3}" +
-            "\n\tButton_Stop: {4}" +
-            "\n\tButton_Play: {5}" + 
-            "\n\tButton_Prev: {6}" + 
-            "\n\tButton_Next: {7}",
-            counter_button_view_1.count,
-            counter_button_view_2.count,
-            counter_button_view_3.count,
+            "\n\tButton_Perspective: {0}" + 
+            "\n\tButton_Mirror: {1}" +
+            "\n\tButton_Mimic: {2}" + 
+            "\n\tButton_Stop: {3}" +
+            "\n\tButton_Play: {4}" + 
+            "\n\tButton_Prev: {5}" + 
+            "\n\tButton_Next: {6}",
+            counter_button_perspective.count,
             counter_button_mirror.count,
+            counter_button_mimic.count,
             counter_button_stop.count,
             counter_button_play.count,
             counter_button_prev.count,
             counter_button_next.count
         );
-        /*
-        string to_write = string.Format(
-            "\nClicks:" + 
-            "\n\tButton_PerspectiveDefault: {0}" + 
-            "\n\tButton_PerspectiveFace: {1}" +
-            "\n\tButton_PerspectiveHands: {2}" +
-            "\n\tButton_Mirror: {3}" +
-            "\n\tButton_Stop: {4}" +
-            "\n\tButton_Play: {5}" + 
-            "\n\tButton_Prev: {6}" + 
-            "\n\tButton_Next: {7}" +
-            "\n\tSlider_Elapsed: {8}" +
-            "\n\tSlider_Speed: {9}",
-            counter_button_view_1.count,
-            counter_button_view_2.count,
-            counter_button_view_3.count,
-            counter_button_mirror.count,
-            counter_button_stop.count,
-            counter_button_play.count,
-            counter_button_prev.count,
-            counter_button_next.count,
-            counter_slider_elapsed.count,
-            counter_slider_speed.count
-        );
-        */
 
         writeToFile(to_write);
     }
