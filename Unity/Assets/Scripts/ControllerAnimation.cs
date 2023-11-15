@@ -52,12 +52,10 @@ public class ControllerAnimation : MonoBehaviour
     TMP_Text definition;
 
     Animator animator;
-    public GameObject lynn;
+    GameObject avatar;
     AnimatorStateInfo animator_state_info;
 
     int current_term_index = 0; 
-
-    ColorBlock color;
 
     private void EventHandler(BaseEventData eventData) {
         animator.Play(animator_state_info.fullPathHash, 0, slider_animation_elapsed.value);
@@ -69,18 +67,11 @@ public class ControllerAnimation : MonoBehaviour
 
     void Start()
     {
-        animator = lynn.GetComponent<Animator>();
-        //animator = GameObject.Find("Lynn").GetComponent<Animator>();
-        //lynn = GameObject.Find("Lynn");
+        avatar = GameObject.Find("Avatar");
+        animator = avatar.GetComponent<Animator>();
+
         term = GameObject.Find("Dictionary_Term").GetComponent<TextMeshProUGUI>();
         definition = GameObject.Find("Dictionary_Definition").GetComponent<TextMeshProUGUI>();
-
-        color.disabledColor = new Color(0.75f, 0.75f, 0.75f, 1);
-        color.highlightedColor = new Color(1, 1, 1, 1);
-        color.normalColor = new Color(0.75f, 0.75f, 0.75f, 1);
-        color.pressedColor = new Color(0.75f, 0.75f, 0.75f, 1);
-        color.selectedColor = new Color(0.75f, 0.75f, 0.75f, 1);
-        color.colorMultiplier = 1.0f;
 
         initSliderAnimationElapsed();
         initSliderAnimationSpeed();
@@ -152,14 +143,6 @@ public class ControllerAnimation : MonoBehaviour
 
         button_mimic = GameObject.Find("Button_Mimic").GetComponent<Button>();
         button_mimic.onClick.AddListener(Handle_Button_Mimic);
-        /*
-        button_mirror.colors = color;
-        button_mimic.colors = color;
-        button_playPause.colors = color;
-        button_stop.colors = color;
-        button_prev.colors = color;
-        button_next.colors = color;
-        */
     }
 
     void initDictionary() {
@@ -217,11 +200,11 @@ public class ControllerAnimation : MonoBehaviour
     }
 
     void Handle_Button_Mirror() {
-        if (lynn.transform.localScale.x == 1) {
-            lynn.transform.localScale = new Vector3(-1, 1, 1);
+        if (avatar.transform.localScale.x == 1) {
+            avatar.transform.localScale = new Vector3(-1, 1, 1);
             button_mirror.image.sprite = sprite_mirror_2;
         } else {
-            lynn.transform.localScale = new Vector3(1, 1, 1);
+            avatar.transform.localScale = new Vector3(1, 1, 1);
             button_mirror.image.sprite = sprite_mirror_1;
         }
     }
@@ -230,9 +213,9 @@ public class ControllerAnimation : MonoBehaviour
         mimic = !mimic;
         animator.SetBool("MimicBool", mimic);
         if (mimic) {
-            button_mimic.image.sprite = sprite_mimic_no;
-        } else {
             button_mimic.image.sprite = sprite_mimic_yes;
+        } else {
+            button_mimic.image.sprite = sprite_mimic_no;
         }
     }
 

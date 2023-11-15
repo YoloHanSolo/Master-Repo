@@ -12,40 +12,43 @@ public class ControllerRotate : MonoBehaviour, IPointerEnterHandler, IPointerExi
     public Vector2 hotSpot = Vector2.zero;
 
     public float rotation_sensitivity = 50.0f;
-
-    public GameObject lynn;
-
+    GameObject avatar;
     Vector3 mouse_now;
     Vector3 mouse_prev;
     float mouse_delta_x;
+    float mouse_delta_y;
 
     bool mouse_over = false;
 
-    void Start()
-    {   
+    void Start() {   
+        avatar = GameObject.Find("Avatar");
     }
 
     void Update() {
         mouse_now = Input.mousePosition;
         if (mouse_prev != null) {
             mouse_delta_x = mouse_now.x - mouse_prev.x;
+            mouse_delta_y = mouse_now.y - mouse_prev.y;
         }
         mouse_prev = Input.mousePosition;
 
         if (mouse_over) {
             if (Input.GetMouseButton(0)) {
-                lynn.transform.eulerAngles += new Vector3(0, -mouse_delta_x * rotation_sensitivity * Time.deltaTime, 0);
+                avatar.transform.eulerAngles += new Vector3(
+                    0, //-mouse_delta_y * rotation_sensitivity * Time.deltaTime, 
+                    -mouse_delta_x * rotation_sensitivity * Time.deltaTime, 
+                    0);
 
-                if (lynn.transform.rotation[1] > 0.83) {
-                    if (lynn.transform.rotation[3] > 0 ) {
-                        lynn.transform.eulerAngles = new Vector3(0, 110, 0);
+                if (avatar.transform.rotation[1] > 0.83) {
+                    if (avatar.transform.rotation[3] > 0 ) {
+                        avatar.transform.eulerAngles = new Vector3(0, 110, 0);
                     } else {
-                        lynn.transform.eulerAngles = new Vector3(0, -110, 0);
+                        avatar.transform.eulerAngles = new Vector3(0, -110, 0);
                     }
                 }
             }
             if (Input.GetMouseButton(1)) {
-                lynn.transform.eulerAngles = new Vector3(0, 0, 0);
+                avatar.transform.eulerAngles = new Vector3(0, 0, 0);
             }
         }
 

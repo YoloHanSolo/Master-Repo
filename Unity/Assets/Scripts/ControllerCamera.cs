@@ -8,16 +8,18 @@ public class ControllerCamera : MonoBehaviour
 {
 
     public Sprite sprite_view_default;
+    public Sprite sprite_view_top;
     public Sprite sprite_view_face;
 
     Camera camera_default;
+    Camera camera_top;
     Camera camera_face;
 
     Button button_perspective;
 
     GameObject avatar;
 
-    bool view_default = true;
+    int view_state = 0;
 
     void Start()
     {
@@ -27,11 +29,14 @@ public class ControllerCamera : MonoBehaviour
         button_perspective.onClick.AddListener(Handle_Button);  
 
         camera_default = GameObject.Find("CameraDefault").GetComponent<Camera>();
+        camera_top = GameObject.Find("CameraTop").GetComponent<Camera>();
         camera_face = GameObject.Find("CameraFace").GetComponent<Camera>();
 
         camera_default.gameObject.SetActive(true);
+        camera_top.gameObject.SetActive(false);
         camera_face.gameObject.SetActive(false);
-        button_perspective.image.sprite = sprite_view_face;
+
+        button_perspective.image.sprite = sprite_view_default;
     }
 
     void Update() {
@@ -39,20 +44,28 @@ public class ControllerCamera : MonoBehaviour
     }
 
     void Handle_Button() {
-        if (view_default) {
-            view_default = false;
+        if (view_state == 0) {
+            view_state = 1;
             camera_default.gameObject.SetActive(false);
-            camera_face.gameObject.SetActive(true);
-            avatar.transform.eulerAngles = new Vector3(0, 0, 0);
-            button_perspective.image.sprite = sprite_view_default;
-        } else {
-            view_default = true;
-            camera_default.gameObject.SetActive(true);
+            camera_top.gameObject.SetActive(true);
             camera_face.gameObject.SetActive(false);
             avatar.transform.eulerAngles = new Vector3(0, 0, 0);
+            button_perspective.image.sprite = sprite_view_top;
+        } else if (view_state == 1) {
+            view_state = 2;
+            camera_default.gameObject.SetActive(false);
+            camera_top.gameObject.SetActive(false);
+            camera_face.gameObject.SetActive(true);
+            avatar.transform.eulerAngles = new Vector3(0, 0, 0);
             button_perspective.image.sprite = sprite_view_face;
+        } else if (view_state == 2) {
+            view_state = 0;
+            camera_default.gameObject.SetActive(true);
+            camera_top.gameObject.SetActive(false);
+            camera_face.gameObject.SetActive(false);
+            avatar.transform.eulerAngles = new Vector3(0, 0, 0);
+            button_perspective.image.sprite = sprite_view_default;
         }
-
     }
 
 }

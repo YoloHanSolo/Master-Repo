@@ -2,43 +2,43 @@
 	"dictionary": [
 		{
 			"term": "Antigenski test",
-			"definition": "Hitri antigenski test (HAT) je diagnostični test, ki se uporablja za zgodnje odkrivanje specifičnih beljakovin, ki so povezani s prisotnostjo nalezljivega organizma, na primer virusa. Ta vrsta testa se običajno uporablja za hitro preverjanje, ali je oseba okužena z določenim virusom, kot je virus SARS-CoV-2, ki povzroča COVID-19. So enostavni za izvedbo ter običajno zagotavljajo rezultate v nekaj minutah."
+			"definition": "Antigenski test pomaga odkriti nalezljive bolezni, kot so gripa ali covid-19."
 		},
 		{
 			"term": "Digitalno spletno potrdilo",
-			"definition": "Digitalno potrdilo je naša identiteta v digitalnem svetu. Je računalniški zapis, ki vsebuje podatke o lastniku. Potrebujemo ga za varno elektronsko komuniciranje z državnimi in drugimi portali ter aplikacijami. Z njim izkazujete svojo identiteto in se elektronsko podpisujete."
+			"definition": "Digitalno spletno potrdilo je elektronski dokument, ki potrjuje identiteto uporabnika na spletu."
 		},
 		{
 			"term": "Emancipacija",
-			"definition": "Emancipacija je koncept, ki se nanaša na proces osvobajanja posameznikov ali skupin iz socialnih, političnih, ekonomskih ali kulturnih omejitev, ki jim preprečujejo enakopravno sodelovanje v družbi. Ta proces pogosto poudarja pridobivanje enakih pravic, svoboščin in priložnosti za vse člane družbe, ne glede na njihov spol, rasno, etnično, versko ali druge značilnosti."
+			"definition": "Emancipacija se nanaša na proces osvobajanja ali pridobivanja enakopravnosti, npr. emancipacija žensk."
 		},
 		{
 			"term": "Evropska centralna banka",
-			"definition": "Evropska centralna banka (ECB) je glavna finančna institucija, odgovorna za izvajanje denarne politike za države članice evrskega območja v Evropski uniji."
+			"definition": "Evropska centralna banka (ECB) je glavna finančna institucija, odgovorna za denarno politiko v območju evra."
 		},
 		{
 			"term": "Izredna pravna sredstva",
-			"definition": "Izredna pravna sredstva, ki jih posamezniki ali organizacije lahko uporabijo za pravno zaščito svojih pravic, če menijo, da so bile njihove pravice kršene in če ni več možnosti za pritožbo v okviru običajnega pravosodnega postopka. Izredna pravna sredstva so namenjena reševanju izjemnih situacij, ko so osnovne pravice ogrožene ali kršene in je treba zagotoviti pravno zaščito."
+			"definition": "Izredna pravna sredstva so posebni pravni postopki ali ukrepi, ki omogočajo strankam, da izpodbijajo odločitve sodišča."
 		},
 		{
 			"term": "Izvršilni postopek",
-			"definition": "Izvršilni postopek je pravni postopek, ki se uporablja za uveljavljanje izvršljivih sodb, odločb in drugih izvršljivih dokumentov, s katerimi se odredi izpolnitev določenih obveznosti, denarne odškodnine ali drugih zahtevkov."
+			"definition": "Izvršilni postopek je pravna procedura, namenjena izvršitvi sodne odločbe ali drugega izvršljivega dokumenta."
 		},
 		{
 			"term": "Neoporečen",
-			"definition": "Beseda neoporečen se uporablja za označevanje stanja ali lastnosti, ki je brez napak, pomanjkljivosti, napak ali hib. Biti neoporečen pomeni, da ne obstajajo pomanjkljivosti ali napake, ki bi lahko vplivale na popolnost, celovitost ali kakovost nečesa. Ta izraz se pogosto uporablja v različnih kontekstih, vključno z etičnimi, moralnimi, pravnimi, tehničnimi in drugimi."
+			"definition": "Beseda neoporečen se nanaša na nekaj, kar je brezhibno, brez pomanjkljivosti, napak ali nepravilnosti."
 		},
 		{
 			"term": "Pandemija",
-			"definition": "Pandemija je epidemija nalezljive bolezni, ki se širi po večjem območju, na večjih geografskih območjih, celinah ali po celem svetu. Pandemije so obsežne in močno vplivajo na zdravje ljudi, družbo in gospodarstvo ter zahtevajo globalno pozornost in ukrepanje, da se obvladajo in preprečijo nadaljnje širjenje bolezni."
+			"definition": "Pandemija je epidemija nalezljive bolezni, ki se širi po večjem območje."
 		},
 		{
 			"term": "Trajnostni razvoj",
-			"definition": "Trajnostni razvoj je razvojni pristop, ki sledi načelu zadovoljevanja trenutnih potreb človeštva, ne da bi ogrozili sposobnost prihodnjih generacij, da zadovoljijo svoje potrebe. Ta koncept poudarja ravnovesje med gospodarskim, družbenim in okoljskim vidikom razvoja in se osredotoča na dolgoročno vzdržnost človeške dejavnosti in upravljanje naravnih virov."
+			"definition": "Trajnostni razvoj pomeni zadovoljevanje sedanjih potreb, ne da bi ogrozili sposobnost prihodnjih generacij, da zadovoljijo svoje potrebe."
 		},
 		{
 			"term": "Umetna inteligenca",
-			"definition": "Umetna inteligenca (UI) je področje računalništva, ki se ukvarja z razvojem sistemov in programov, ki imajo sposobnost opravljanja nalog, ki običajno zahtevajo človeško inteligenco. Ti sistemi in programi so oblikovani za razumevanje, učenje, sklepanje, reševanje problemov in izvajanje nalog na način, ki posnema človeško razmišljanje."
+			"definition": "Umetna inteligenca zajema metode, ki omogočajo računalnikom izvajanje nalog, ki zahtevajo človeško inteligenco."
 		}	
 	]
 }
