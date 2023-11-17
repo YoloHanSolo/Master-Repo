@@ -40,7 +40,10 @@ public class ControllerCamera : MonoBehaviour
     }
 
     void Update() {
-
+        if (Input.GetKeyDown(KeyCode.P)) {
+            view_state = (view_state + 1) % 3;
+            Handle_Button();
+        } 
     }
 
     void Handle_Button() {

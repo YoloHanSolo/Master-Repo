@@ -87,18 +87,38 @@ public class ControllerAnimation : MonoBehaviour
         animator_state_info = animator.GetCurrentAnimatorStateInfo(0);
 
         if (playing) {
-            // ANIMATION PLAYING
+            if (Input.GetKeyDown(KeyCode.Space)) {
+                Animation_Pause_Playing();
+            }
             if (animator_state_info.normalizedTime >= 0.0f && animator_state_info.normalizedTime <= 1.0f) {
                 slider_animation_elapsed.value = animator_state_info.normalizedTime;
             }
-            // ANIMATION OVER
             if (animator_state_info.normalizedTime > 1.0f) {
                 slider_animation_elapsed.value = 1.0f;
                 animator.Play(animator_state_info.fullPathHash, 0, 0.0f);
                 Animation_Stop_Playing();
             }
+        } else {
+            if (Input.GetKeyDown(KeyCode.Space)) {
+                Animation_Start_Playing();
+            }
         }
 
+        if (Input.GetKeyDown(KeyCode.Z)) {
+            Handle_Button_Mirror();
+        }
+
+        if (Input.GetKeyDown(KeyCode.M)) {
+            Handle_Button_Mimic();
+        }
+
+        if (Input.GetKeyDown(KeyCode.LeftArrow)) {
+            Handle_Button_Prev();
+        }
+
+        if (Input.GetKeyDown(KeyCode.RightArrow)) {
+            Handle_Button_Next();
+        } 
     }
 
     //////////
