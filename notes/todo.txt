@@ -1,4 +1,0 @@
-limit rotate to X degrees
-test button hover video display of button meaning
-send example mail to check if okay
-send new text of "pregled področja"
